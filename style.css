@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Chillax-Regular';
+    src: url('Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff2') format('woff2'),
+         url('Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.woff') format('woff'),
+         url('Chillax_Complete/Fonts/WEB/fonts/Chillax-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chillax-Regular', sans-serif;
+}
+
+.navbar {
+    background: #007bff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    padding: 10px; 
+}
+
+#logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar_links:hover {
+    color: rgb(0, 217, 255);
+    transition: all 2 ease;
+}
+
+/* nav end */
+
+.main {
+    background-color: rgb(240, 240, 240);
+}
+
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: aliceblue;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main_content h1{
+    font-size: 4rem;
+    background-color: #007bff;
+    background-image: linear-gradient(to top, #007bff 0%, rgb(80, 0, 240)  100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main_content h2{
+    font-size: 2rem;
+    background-color: #007bff;
+    background-image: linear-gradient(to top, #7462fd 0%, rgb(73, 10, 247)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main_content p{
+    margin-top: 1rem;
+    font-size: rem;
+    font-weight: 700;
+}
