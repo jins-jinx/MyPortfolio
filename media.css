@@ -24,12 +24,12 @@
     }
     
     .navbar_menu.active{
-        background-color: #007bff;
+        background-color: #007bff88;
         top: 100%;
         opacity: 1;
         transition: all 0.5 ease;
         z-index: 99;
-        height: 50vh;
+        height: 70vh;
         font-size: 1.6rem;
     }
 
@@ -80,9 +80,158 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* end nav */
 
+    @media screen and (max-width: 960px) {
+        .main_container{
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            justify-self: center;
+            width: 100%;
+            margin: 0 auto;
+            height: 140vh;
+        }
 
+        .main_content{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
 
+        .main_content h1{
+            font-size: 3.5rem;
+            margin-top: 2rem;
+        }
+
+        .main_content h2{
+            font-size: 2.5rem;
+        }
+
+        .main_content p{
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+        
+    }
+
+    @media screen and (max-width: 480px) {
+        .main_content h1{
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .main_content h2{
+            font-size: 1.5rem;
+        }
+
+        .main_content p{
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .resumeButton {
+            padding: 12px 36px;
+        }
+    }
+
+    /* end main_content */
+
+    @media screen and (max-width: 960px) {
+        .projects {
+            height: auto; /* Dynamically adjust height */
+            padding: 1.5rem;
+        }
+    
+        .projects h1 {
+            font-size: 2rem;
+            margin-top: 2rem; /* Add consistent spacing */
+        }
+    
+        .projects h2 {
+            font-size: 1.5rem;
+        }
+    
+        .projects p {
+            font-size: 1rem;
+        }
+    
+        .project_pics {
+            width: 250px; /* Slightly reduce width for medium screens */
+        }
+    }
+    
+    /* Media Query for devices 480px and smaller (phones) */
+    @media screen and (max-width: 480px) {
+        .projects {
+            padding: 1rem; /* Reduce padding */
+        }
+    
+        .projects h1 {
+            font-size: 1.8rem; /* Slightly smaller heading */
+        }
+    
+        .projects h2 {
+            font-size: 1rem; /* Smaller subheadings */
+        }
+    
+        .projects p {
+            font-size: 0.8rem; /* Reduce font size for better fit */
+        }
+    
+        .projects_container a button {
+            font-size: 0.9rem; /* Adjust button font size */
+            padding: 0.5rem 1rem; /* Adjust button size */
+        }
+    }
+
+     /* end projects */
+
+     @media screen and (max-width: 960px) {
+
+        .skills{
+            height: 250vh;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+        }
+
+        .skills h1{
+            font-size: 2rem;
+            margin-top: 4rem
+        }
+        
+        .skills h2{
+            font-size: 1.5rem;
+        }
+
+        .skills p{
+            font-size: 1rem;
+        }
+
+        
+    }
+
+    @media screen and (max-width: 480px) {
+        .skills{
+            height: 190vh;
+        }
+
+        .skills h1{
+            font-size: 2rem;
+        }
+        
+        .skills h2{
+            font-size: 1.5rem;
+        }
+
+        .skills p{
+            font-size: 1rem;
+        }
+
+        
+    }
 
 
 }
