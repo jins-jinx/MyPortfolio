@@ -233,13 +233,18 @@ html{
     background-position: center;
 }
 
-.projects_container:nth-of-type(2) .project_pics:nth-of-type(1){
+.project_pics:nth-child(4){
     background-image: url(/images/ATM/ATM_FRAME.png);
     background-position: center;
 }
 
-.projects_container:nth-of-type(2) .project_pics:nth-of-type(2){
+.projects_container:nth-of-type(2) .project_pics:nth-of-type(1){
     background-image: url(/images/STUDENT_REGISTRATION/SR\ SEARCH.png);
+    background-position: center;
+}
+
+.projects_container:nth-of-type(2) .project_pics:nth-of-type(2){
+    background-image: url(/images/ARCANE/ABOUT.png);
     background-position: center;
 }
 
@@ -267,7 +272,7 @@ html{
     background-blend-mode: lighten;
 }
 
-.projects_container:nth-of-type(2) .project_pics:nth-of-type(2) p{
+.projects_container:nth-of-type(2) .project_pics:nth-of-type(1) p{
     color: black;
 }
 
